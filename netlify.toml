@@ -1,0 +1,4 @@
+[build]
+  base = "SoraVibe AI"
+  publish = "."
+  command = "echo 'soravibe AI - Static Site Ready for Deployment'"
