@@ -1,0 +1,134 @@
+backend:
+  name: git-gateway
+  branch: main
+  repo: your-github-username/soravibe-ai
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "comics"
+    label: "Comics"
+    files:
+      - file: "data/comics.json"
+        label: "Comic List"
+        name: "comics_list"
+        fields:
+          - name: "comics"
+            label: "All Comics"
+            widget: "list"
+            fields:
+              - { 
+                  label: "Title", 
+                  name: "title", 
+                  widget: "string",
+                  hint: "Enter the comic title"
+                }
+              - { 
+                  label: "Author", 
+                  name: "author", 
+                  widget: "string",
+                  hint: "Comic author or publisher name"
+                }
+              - { 
+                  label: "Genre", 
+                  name: "genre", 
+                  widget: "select",
+                  options: ["Action", "Adventure", "Comedy", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Sci-Fi", "Thriller"],
+                  hint: "Select the primary genre"
+                }
+              - { 
+                  label: "Year", 
+                  name: "year", 
+                  widget: "number",
+                  default: 2024,
+                  hint: "Release year"
+                }
+              - { 
+                  label: "Synopsis", 
+                  name: "description", 
+                  widget: "text",
+                  hint: "Brief description or synopsis of the comic"
+                }
+              - { 
+                  label: "Cover Image", 
+                  name: "cover", 
+                  widget: "image",
+                  hint: "Upload comic cover image (optional)",
+                  required: false
+                }
+              - { 
+                  label: "Emoji Icon", 
+                  name: "emoji", 
+                  widget: "string",
+                  default: "📚",
+                  hint: "Unicode emoji to display in cards"
+                }
+              - { 
+                  label: "Spotlight Item?", 
+                  name: "spotlight", 
+                  widget: "boolean", 
+                  default: false,
+                  hint: "Feature this comic in the spotlight section"
+                }
+              - { 
+                  label: "Trending?", 
+                  name: "trending", 
+                  widget: "boolean", 
+                  default: true,
+                  hint: "Include in trending carousel"
+                }
+              - { 
+                  label: "New Release?", 
+                  name: "isNew", 
+                  widget: "boolean", 
+                  default: false,
+                  hint: "Feature in new releases section"
+                }
+              - { 
+                  label: "Number of Episodes", 
+                  name: "episodes", 
+                  widget: "string",
+                  default: "26 Episodes",
+                  required: false,
+                  hint: "Total number of episodes/chapters"
+                }
+              - { 
+                  label: "Release Date", 
+                  name: "releaseDate", 
+                  widget: "datetime",
+                  required: false,
+                  hint: "When the comic was released"
+                }
+              - { 
+                  label: "Status", 
+                  name: "status", 
+                  widget: "select",
+                  options: ["Ongoing", "Completed", "Hiatus", "Cancelled"],
+                  default: "Ongoing",
+                  required: false
+                }
+              - { 
+                  label: "Rating", 
+                  name: "rating", 
+                  widget: "number",
+                  min: 0,
+                  max: 5,
+                  step: 0.5,
+                  required: false,
+                  hint: "Rating from 0 to 5 stars"
+                }
+              - { 
+                  label: "Tags", 
+                  name: "tags", 
+                  widget: "list",
+                  required: false,
+                  hint: "Add relevant tags for categorization"
+                }
+              - { 
+                  label: "Featured", 
+                  name: "featured", 
+                  widget: "boolean", 
+                  default: false,
+                  required: false
+                }

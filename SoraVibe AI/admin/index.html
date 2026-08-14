@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Admin - soravibe AI CMS</title>
+    <link rel="stylesheet" href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #15141f;
+            color: #e0e0e0;
+        }
+
+        /* Custom theming for Decap CMS */
+        :root {
+            --color-primary: #ff2e93;
+            --color-secondary: #c400ff;
+            --color-bg: #15141f;
+            --color-card: #201f31;
+            --color-text: #e0e0e0;
+            --color-text-secondary: #a0a0a0;
+            --color-border: #2a2a3e;
+        }
+
+        .nc-root {
+            background: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        .nc-editor-sidebar {
+            background: var(--color-card);
+            border-right: 1px solid var(--color-border);
+        }
+
+        .nc-editor-main {
+            background: var(--color-bg);
+        }
+
+        .nc-editor-frame {
+            background: var(--color-card);
+        }
+
+        .nc-widget-text,
+        .nc-widget-string,
+        .nc-widget-textarea {
+            background: var(--color-card);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+
+        .nc-widget-text:focus,
+        .nc-widget-string:focus,
+        .nc-widget-textarea:focus {
+            border-color: var(--color-primary);
+            outline: none;
+        }
+
+        .nc-button-primary {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            border: none;
+        }
+
+        .nc-button-primary:hover {
+            opacity: 0.9;
+        }
+
+        /* Login page styling */
+        .nc-login {
+            background: var(--color-bg);
+        }
+
+        .nc-login-form {
+            background: var(--color-card);
+        }
+
+        a {
+            color: var(--color-primary);
+        }
+
+        /* Toolbar styling */
+        .nc-toolbar {
+            background: var(--color-card);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        /* Collection list styling */
+        .nc-collection-list {
+            background: var(--color-card);
+        }
+
+        .nc-collection-list-item {
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .nc-collection-list-item:hover {
+            background: rgba(255, 46, 147, 0.1);
+        }
+    </style>
+</body>
+</html>

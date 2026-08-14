@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soravibe AI - Dark Comic Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-text">soravibe<span class="logo-accent">AI</span></span>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search comics..." class="search-input" id="searchInput">
+                <button class="filter-btn" id="filterBtn">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link" title="Reddit"><i class="fab fa-reddit"></i></a>
+                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- Nav Links & Login -->
+            <nav class="nav-links">
+                <a href="#" class="nav-link">Favourites</a>
+                <button class="lang-toggle" id="langToggle">EN/JP</button>
+                <a href="#" class="nav-link">Read2Gether</a>
+                <a href="#" class="nav-link">Community</a>
+                <a href="admin/" class="login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Spotlight Section -->
+    <section class="spotlight-section">
+        <div class="spotlight-container">
+            <!-- Left Content -->
+            <div class="spotlight-content">
+                <div class="spotlight-tag">#1 Spotlight</div>
+                <h1 class="spotlight-title" id="spotlightTitle">Loading...</h1>
+                <div class="spotlight-meta" id="spotlightMeta">
+                    <span class="meta-item">2024</span>
+                    <span class="meta-item">Action</span>
+                    <span class="meta-item">26 Episodes</span>
+                </div>
+                <p class="spotlight-synopsis" id="spotlightSynopsis">
+                    Loading comic details...
+                </p>
+                <div class="spotlight-buttons">
+                    <button class="read-now-btn">Read Now</button>
+                    <button class="detail-btn">Detail ></button>
+                </div>
+            </div>
+
+            <!-- Right Navigation -->
+            <div class="spotlight-nav">
+                <button class="carousel-arrow prev" id="spotlightPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-arrow next" id="spotlightNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Background -->
+        <div class="spotlight-bg" id="spotlightBg"></div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="promo-content">
+            <span class="promo-text">Follow us on social media for updates:</span>
+            <div class="promo-socials">
+                <a href="#" class="promo-social-link">Discord</a>
+                <a href="#" class="promo-social-link">Twitter</a>
+                <a href="#" class="promo-social-link">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <div class="section-header">
+            <h2 class="section-title">Trending</h2>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="trendingPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="trendingNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-scroll" id="trendingCarousel">
+                <!-- Comics will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- New Releases Section -->
+    <section class="new-releases-section">
+        <div class="section-header">
+            <h2 class="section-title">New Releases</h2>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="newReleasesPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="newReleasesNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-scroll" id="newReleasesCarousel">
+                <!-- Comics will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>soravibe AI - Your premium dark-themed comic platform with curated content.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-reddit"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 soravibe AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
