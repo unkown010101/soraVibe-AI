@@ -1,0 +1,18 @@
+{
+  "comics": [
+    {
+      "genre": "Adventure",
+      "trending": true,
+      "emoji": "📚",
+      "author": "Me",
+      "featured": false,
+      "status": "Ongoing",
+      "spotlight": true,
+      "isNew": true,
+      "episodes": "1 Episodes",
+      "title": "Trail 1",
+      "description": "efhawsoljgbejlgbwaejgbaeljgegjbe;kjgbjlblgbkljegb",
+      "year": 2026
+    }
+  ]
+}
